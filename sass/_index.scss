@@ -1,0 +1,28 @@
+.fonctionnement{
+    &__etape{
+        position: relative;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        padding: 30px;
+        border-radius: 20px;
+        .numb{
+            position: absolute;
+            left: -15px;
+            background-color: rgba(147, 86, 220, 1);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 50px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    .fonctionnement{
+        display: flex;
+        gap: 20px;
+        &__etape{
+            width: 33%;
+        }
+    }
+
+}

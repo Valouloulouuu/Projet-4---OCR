@@ -1,0 +1,24 @@
+.fonctionnement__etape {
+  position: relative;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 30px;
+  border-radius: 20px;
+}
+.fonctionnement__etape .numb {
+  position: absolute;
+  left: -15px;
+  background-color: rgb(147, 86, 220);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+@media (min-width: 1024px) {
+  .fonctionnement {
+    display: flex;
+    gap: 20px;
+  }
+  .fonctionnement__etape {
+    width: 33%;
+  }
+}/*# sourceMappingURL=main.css.map */

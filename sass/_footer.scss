@@ -1,16 +1,13 @@
-@media (max-width: 767px) {
-    footer{
-        background-color: #353535; 
-    }
-    .foot{
-        display: block;
-        &__logo{
-            padding: 25px;
-            color: white;
-            img{
-                height: 25px;
-            }
-        }
-    }
-        
+footer{
+    background-color: #353535; 
 }
+.foot{
+display: block;
+&__logo{
+    padding: 25px;
+    color: white;
+    img{
+        height: 25px;
+    }
+}
+} 

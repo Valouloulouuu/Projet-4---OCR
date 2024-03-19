@@ -3,7 +3,8 @@
 }
 
 body {
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 a {
@@ -19,23 +20,27 @@ h3 {
   font-size: 18px;
 }
 
+h1 {
+  margin: 0;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
 }
 
 header {
+  position: relative;
   justify-content: center;
   align-items: center;
   width: 100%;
   font-weight: 500;
-  margin-top: 20px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
 }
 
 .logo {
   display: flex;
-  margin-bottom: 15px;
+  padding: 15px;
   width: 100%;
   justify-content: center;
 }
@@ -54,19 +59,41 @@ header {
   align-items: center;
 }
 
+.fa-arrow-left {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 23px;
+}
+
 footer {
   background-color: #353535;
 }
 
 .foot {
-  display: block;
-}
-.foot__logo {
-  padding: 25px;
+  display: grid;
   color: white;
+  padding: 25px;
 }
-.foot__logo img {
-  height: 25px;
+.foot__logo h2 {
+  font-family: "Shrikhand", serif;
+  font-weight: 300;
+  margin: 0px;
+  padding-bottom: 15px;
+}
+.foot__liens {
+  padding-bottom: 5px;
+  font-weight: 400;
+}
+.foot__liens .icon {
+  gap: 200px;
+}
+.foot__contact {
+  display: grid;
+  font-weight: 300;
+}
+.foot__contact a {
+  padding-bottom: 5px;
 }
 
 .explo {
@@ -136,14 +163,14 @@ footer {
 }
 
 .restau {
-  padding: 30px;
+  padding: 15px;
   background-color: #F6F6F6;
 }
 .restau__card {
   position: relative;
   background-color: #fff;
   border-radius: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 .restau__card img {
@@ -151,7 +178,7 @@ footer {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 230px;
+  height: 150px;
   border-radius: 25px 25px 0px 0px;
 }
 .restau__card .new {
@@ -186,18 +213,44 @@ footer {
     width: 33%;
   }
 }
-@media (max-width: 767px) {
-  .carte {
-    width: 100%;
-  }
-  .carte__card {
-    position: relative;
-    padding: 50px;
-    font-weight: 500;
-    margin-bottom: 30px;
-    background: #F6F6F6;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
-    padding: 30px;
-    border-radius: 20px;
-  }
+.imgmen img {
+  width: 100%;
+}
+
+.menu {
+  width: 95%;
+  padding: 15px;
+  border-radius: 25px 25px 0px 0px;
+  background-color: #F6F6F6;
+}
+.menu h1 {
+  font-family: "Shrikhand", serif;
+  font-weight: 200;
+}
+.menu__section {
+  padding: 10px;
+}
+.menu__carte {
+  position: relative;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #F6F6F6;
+  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 20px;
+}
+.menu__carte h3, .menu__carte p {
+  margin: 0;
+}
+.menu__btn {
+  font-weight: 500;
+  font-size: 16px;
+  height: 50px;
+  color: #fff;
+  background: linear-gradient(355deg, #9356DC 1%, #FF79DA 100%);
+  padding: 10px 30px;
+  border: none;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  border-radius: 25px;
+  align-items: center;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

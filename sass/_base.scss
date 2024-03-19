@@ -1,8 +1,10 @@
 *{
     font-family: "Roboto", sans-serif;
+    
 }
 body{
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 a{
@@ -17,7 +19,9 @@ p{
 h3{
     font-size: 18px;
 }
-
+h1{
+    margin: 0;
+}
 .container{
     max-width: 1440px;
     margin: 0 auto;

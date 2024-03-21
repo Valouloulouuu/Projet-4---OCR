@@ -81,10 +81,18 @@
         }
         .new{
             position: absolute;
-            left: 300px;
-            padding: 8px;
-            background-color:green;
+            top: 10px;
+            right: 15px;
+            padding: 5px;
+            background: #99E2D0;
+            box-shadow: 0px 2px 4px 0px #00000026;
+            border-radius: 3px;
             
+        }
+        .new1{
+            color:#008766;
+            font-size: 13px;
+            font-weight: 500;
         }
         h3, p{
             margin : 0px;
@@ -115,6 +123,17 @@
         }
         &__etape{
             width: 33%;
+        }
+    }
+    .bur{
+        display:grid;
+        grid-template-columns: 50% 50%;
+        gap: 30px;
+
+    }
+    .restau{
+        &__card{
+            width: 100%;
         }
     }
 

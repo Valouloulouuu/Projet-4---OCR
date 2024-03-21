@@ -1,5 +1,6 @@
 footer{
-    background-color: #353535; 
+    background-color: #353535;
+    width: 100%;
 }
 .foot{
 display: grid;
@@ -27,4 +28,23 @@ padding: 25px;
         padding-bottom: 5px;
     }
 }
-} 
+}
+
+@media (min-width: 1024px) {
+
+    .foot{
+        display:flex;
+        gap: 15px;
+        &__liens{
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 30px;
+        }
+        &__contact{
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 30px;
+        }
+    }
+
+}

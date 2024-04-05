@@ -105,14 +105,38 @@
             margin: 0;
             padding: 15px;
         }
-        .heart{
+        .fa-heart{
             opacity: 1;
             position: absolute;
             right: 20px;
-            bottom: 30px;
+            bottom: 26px;
+            font-size: 22px;
+        }
+        .fa-solid{
+            opacity: 0;
+            color: transparent;
+            background: linear-gradient(355deg, #9356DC 1%, #FF79DA 100%);
+        }
+        .heart:hover{
+            .fa-regular{
+                opacity: 0;
+            }
+            .fa-solid{
+                animation: heart 1s;
+                animation-fill-mode: both;
+                -webkit-background-clip: text;
+            }
         }
     }
+}
 
+@keyframes heart{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 @media (min-width: 1024px) {

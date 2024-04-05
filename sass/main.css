@@ -239,13 +239,35 @@ footer {
   margin: 0;
   padding: 15px;
 }
-.restau__card .heart {
+.restau__card .fa-heart {
   opacity: 1;
   position: absolute;
   right: 20px;
-  bottom: 30px;
+  bottom: 26px;
+  font-size: 22px;
+}
+.restau__card .fa-solid {
+  opacity: 0;
+  color: transparent;
+  background: linear-gradient(355deg, #9356DC 1%, #FF79DA 100%);
+}
+.restau__card .heart:hover .fa-regular {
+  opacity: 0;
+}
+.restau__card .heart:hover .fa-solid {
+  animation: heart 1s;
+  animation-fill-mode: both;
+  -webkit-background-clip: text;
 }
 
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media (min-width: 1024px) {
   .fonctionnement__etapes {
     display: flex;

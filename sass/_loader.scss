@@ -1,4 +1,10 @@
 .bg-loader{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     position: fixed;
     background: white;
     width: 100%;
@@ -42,6 +48,10 @@
     height: 32px;
     border-color: #9356DC #9356DC transparent transparent;
     animation: rotation 1.5s linear infinite;
+    }
+    img{
+        width: 350px;
+        height: auto;
     }
 }
       

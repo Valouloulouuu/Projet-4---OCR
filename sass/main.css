@@ -116,17 +116,29 @@ footer {
 @media (min-width: 1024px) {
   .foot {
     display: flex;
-    gap: 15px;
+    padding: 30px;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+  }
+  .foot h2 {
+    padding: 0px 30px 0px 50px;
+    font-size: 20px;
   }
   .foot__liens {
     display: flex;
+    order: 1;
     flex-direction: row-reverse;
-    gap: 30px;
+    gap: 10px;
+  }
+  .foot__liens .fir {
+    order: 1;
   }
   .foot__contact {
     display: flex;
     flex-direction: row-reverse;
-    gap: 30px;
+    gap: 10px;
   }
 }
 .bg-loader {
@@ -477,9 +489,19 @@ img {
   align-items: center;
 }
 .menu .titremenu {
+  position: relative;
   margin-left: 10px;
   text-align: left;
   padding-bottom: 2px;
+}
+.menu .titremenu::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 5%;
+  height: 2px;
+  background-color: #99E2D0;
 }
 .menu__section {
   opacity: 0;
